@@ -1,8 +1,11 @@
 {
   "name": "mongo-compatible-parse-schema",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "\"Takes a Parse application id and a master key, exports the schema and outputs a .json file with a Mongo importable schema.\"",
   "main": "index.js",
+  "bin": {
+    "mongo-compatible-parse-schema": "index.js"
+  },
   "scripts": {
     "start": "node index.js"
   },

@@ -1,4 +1,4 @@
-# mongo-compatible-parse-schema-exporter
+# mongo-compatible-parse-schema
 Create a mongoimport-ready parse schema, that's compatible with parse-server. Taking a Parse application id and a master key, it downloads and formats the schema.
 
 Why?
@@ -9,15 +9,17 @@ This tool downloads and formats the schema for you.
 
 Installation
 ---
-```npm install mongo-compatible-parse-schema-exporter``
+```npm install mongo-compatible-parse-schema```
 
 Usage
 ---
 Download the schema using your Parse.com application id and masterkey and output it as _SCHEMA.json:
-```node index.js -a <ApplicationId> -m <MasterKey>```
+
+```mongo-compatible-parse-schema -a <ApplicationId> -m <MasterKey>```
 
 Using an exportet schema from the parse api:
-```node index.js -f schema.json```
+
+```mongo-compatible-parse-schema -f <file>```
 
 Then import it as the `_SCHEMA` collection [in mongo along with the exportet database](https://github.com/moflo/parse-mongodb-export#usage).
 

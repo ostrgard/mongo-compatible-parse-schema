@@ -1,3 +1,5 @@
+#! /usr/bin/env node
+
 var axios = require('axios');
 var pme = require('commander');
 var jsonfile = require('jsonfile');
