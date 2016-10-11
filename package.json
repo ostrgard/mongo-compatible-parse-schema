@@ -1,0 +1,30 @@
+{
+  "name": "mongo-compatible-parse-schema",
+  "version": "1.0.0",
+  "description": "\"Takes a Parse application id and a master key, exports the schema and outputs a .json file with a Mongo importable schema.\"",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://ostrgard@github.com/ostrgard/mongo-compatible-parse-schema.git"
+  },
+  "keywords": [
+    "parse",
+    "schema",
+    "mongo",
+    "import"
+  ],
+  "author": "Søren Østergaard <soestergaards@gmail.com>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/ostrgard/mongo-compatible-parse-schema/issues"
+  },
+  "homepage": "https://github.com/ostrgard/mongo-compatible-parse-schema#readme",
+  "dependencies": {
+    "axios": "^0.14.0",
+    "commander": "^2.9.0",
+    "jsonfile": "^2.4.0"
+  }
+}
